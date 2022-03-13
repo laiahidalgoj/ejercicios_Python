@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d6e3059-cf99-414a-ad79-4c5ee7ce4e74" name="Default Changelist" comment="add changes gitignore">
-      <change afterPath="$PROJECT_DIR$/3. Intro datots python/datosUsuario.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3. Intro datots python/datosUsuario.py" beforeDir="false" afterPath="$PROJECT_DIR$/3. Intro datos python/datosUsuario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3. Intro datots python/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/3. Intro datos python/variables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
