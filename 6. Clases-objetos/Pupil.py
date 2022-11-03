@@ -1,7 +1,6 @@
 class Pupil():
     name = 'Laia'
     note = 9
-    _approved = True
 
     def __init__(self):
         return None
