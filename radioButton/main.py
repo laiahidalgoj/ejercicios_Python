@@ -2,10 +2,17 @@
 import tkinter
 from tkinter import ttk, W
 
-window = tkinter.Tk()
+def select():
+    monitor.config(text='{}'.format(selected.get()))
 
-def makeClick():
-    print('Click')
+def reset():
+    selected.set(None)
+    monitor.config(text='')
+
+window = tkinter.Tk()
+selected = tkinter.StringVar()
+selected.set(None)
+
 
 window.columnconfigure(0, weight=1)
 window.columnconfigure(1, weight=3)
@@ -24,7 +31,8 @@ radio_button3.pack(anchor=W)
 radio_button4.pack(anchor=W)
 radio_button5.pack(anchor=W)
 
-button = ttk.Button(window, text='Restart')
-button.pack(anchor=W)
+monitor = tkinter.Label(window)
+monitor.pack()
+tkinter.Button(window, text='Restart', command=reset).pack()
 
 window.mainloop()
