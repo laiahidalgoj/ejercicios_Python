@@ -1,0 +1,61 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1 style="color: purple; display: flex; justify-content: center;">Full cinema</h1>
+
+  <p>Welcome to <em>Full cinema</em>, an exercise Django website developed</p>
+
+<div class="all-cards" style="display: flex; justify-content: center;">
+
+    <div class="card" style="width: 40rem; border: 3px solid #fafafafa; padding: 20px;" >
+        <div class="card-body">
+             {% load static %} <img src="{% static 'img/midnight-paris.jpeg' %}" style="width: 90%;" class="midnight-paris" alt="midnight-paris">
+          <h5 class="card-title">Midnight in Paris</h5>
+          <p class="card-text">While on a trip to Paris with his fiancée's family, a nostalgic screenwriter finds himself
+            mysteriously going back to the 1920s every day at midnight.</p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 40rem; border: 3px solid #fafafafa; padding: 20px;" >
+        <div class="card-body">
+            {% load static %} <img src="{% static 'img/jaws.jpeg' %}" style="width: 90%;" class="jaws" alt="jaws">
+          <h5 class="card-title">Jaws</h5>
+          <p class="card-text">When a killer shark unleashes chaos on a beach community off Cape Cod, it's up to a local
+              sheriff, a marine biologist, and an old seafarer to hunt the beast down.</p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 40rem; border: 3px solid #fafafafa; padding: 20px;" >
+        <div class="card-body">
+            {% load static %} <img src="{% static 'img/pianist.jpeg' %}" style="width: 90%;" class="pianist" alt="pianist">
+          <h5 class="card-title">The pianist</h5>
+          <p class="card-text">A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of
+              World War II..</p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 40rem; border: 3px solid #fafafafa; padding: 20px;" >
+        <div class="card-body">
+            {% load static %} <img src="{% static 'img/psycho.jpeg' %}" style="width: 90%;" class="psycho" alt="psycho">
+          <h5 class="card-title">Psycho</h5>
+          <p class="card-text">A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks
+              into a remote motel run by a young man under the domination of his mother.</p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 40rem; border: 3px solid #fafafafa; padding: 20px;" >
+        <div class="card-body">
+            {% load static %} <img src="{% static 'img/tintin.jpeg' %}" style="width: 90%;" class="tintin" alt="tintin">
+          <h5 class="card-title">The adventures of Tintín</h5>
+          <p class="card-text">Intrepid reporter Tintin and Captain Haddock set off on a treasure hunt for a sunken
+              ship commanded by Haddock's ancestor.</p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
